@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='public/favicon.png') }}">
+    <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='css/dashboard.css') }}">
+  </head>
+  <body>
+    <div class="main">
+      <p class="author">TypicArtist</p>
+      <p class="information">Information</p>
+      <img class="github-logo" src="{{ url_for('static', filename='public/github-logo.png') }}">
+      <a href="https://github.com/Typixel908">
+        <button class="github-button" type="button">GitHub</button>
+      </a>
+      <img class="discord-logo" src="{{ url_for('static', filename='public/discord-logo.png') }}">
+      <a href="https://discord.com/invite/ohno">
+        <button class="discord-button" type="button">Discord</button>
+      </a>
+      <img class="twitter-logo" src="{{ url_for('static', filename='public/twitter-logo.png') }}">
+      <a href="https://twitter.com/TypicArtist">
+        <button class="twitter-button" type="button">Twitter</button>
+      </a>
+      <p class="project">Project</p>
+    </div>
+    <div id="dashboard"></div>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>
